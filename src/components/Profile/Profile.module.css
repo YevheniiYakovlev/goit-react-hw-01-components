@@ -50,13 +50,13 @@
     text-align: center;
     padding: 10px;
     border: 1px solid #9c9c9c;
-    background-color: lightskyblue;
+    background-color: turquoise;
 }
 
 .label,
 .quantity {
     display: block;
-    color: #000000;
+    color: black;
 }
 
 .quantity {

@@ -1,7 +1,7 @@
-import Profile from '../Profile/Profile';
-import FriendList from '../FriendList/Friendlist';
-import Statistics from '../Statistics/Statistics';
-import TransactionHistory from '../TransactionHistory/TransactionHistory';
+import Profile from 'components/Profile/Profile';
+import FriendList from 'components/FriendList/Friendlist';
+import Statistics from 'components/Statistics/Statistics';
+import TransactionHistory from 'components/TransactionHistory/TransactionHistory';
 
 import user from '../../data/user.json';
 import data from '../../data/data.json';
@@ -16,12 +16,12 @@ export default function App() {
         tag={user.tag}
         location={user.location}
         avatar={user.avatar}
-        followers={user.stats.followers}
-        views={user.stats.views}
-        likes={user.stats.likes}
+        stats={user.stats}
       />
       <Statistics title="Upload stats" stats={data} />
       <Statistics stats={data} />
+      <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </div>
   );
 }
